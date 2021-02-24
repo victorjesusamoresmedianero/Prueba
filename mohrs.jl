@@ -5,13 +5,11 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 896f6942-76a2-11eb-01e9-1156629a4a14
-using Pkg;using Plots; gr()
-
-# ╔═╡ 96f51f08-76a2-11eb-1c31-236c2644712c
-using LaTeXStrings
-
-# ╔═╡ 8e10fc72-76a2-11eb-1adf-af9432cd1b49
-Pkg.add("LaTeXStrings")
+begin 
+	using Pkg;using Plots; gr()
+	Pkg.add("LaTeXStrings")
+	using LaTeXStrings
+end
 
 # ╔═╡ 0eea2678-7641-11eb-1c89-b53ca4514973
 function circleShape(h,k,r)
@@ -105,8 +103,6 @@ end
 # ╔═╡ Cell order:
 # ╠═d56c2fda-7641-11eb-29e8-579e1f95cada
 # ╠═896f6942-76a2-11eb-01e9-1156629a4a14
-# ╠═8e10fc72-76a2-11eb-1adf-af9432cd1b49
-# ╠═96f51f08-76a2-11eb-1c31-236c2644712c
 # ╠═0eea2678-7641-11eb-1c89-b53ca4514973
 # ╠═58cc6b66-7641-11eb-2aa0-3b5f7a52eac9
 # ╠═a8d106fa-7641-11eb-0248-1ddac2014484
